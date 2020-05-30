@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Nav from './components/Nav/Nav'
+import Carousel from './components/Carousel/Carousel'
+import logo from './assets/Ulta_Beauty_logo.png'
+import './App.scss'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='header'>
+        <img src={logo} alt='Ulta beauty logo'/>
+        <div className='header-links'>
+          <div>Shop</div>
+          <div>Deals</div>
+          <div>Stores</div>
+          <div>Bag</div>
+        </div>
+      </div>
+      {/* <Nav /> */}
+      <Carousel />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
