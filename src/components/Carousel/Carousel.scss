@@ -1,0 +1,15 @@
+.search-bar {
+  position: absolute;
+  top: 0;
+  padding: 10px 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  input {
+    border: none;
+    border-radius: 2px;
+    width: 80vw;
+    color: black;
+    padding: 5px;
+  }
+}
