@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import CrossfadeImage from 'react-crossfade-image'
 import './Carousel.scss'
 
-import upperCarouselImg1 from '../../assets/upper_carousel_img_1.jpg'
-import upperCarouselImg2 from '../../assets/upper_carousel_img_2.jpg'
-import upperCarouselImg3 from '../../assets/upper_carousel_img_3.jpg'
-import upperCarouselImg4 from '../../assets/upper_carousel_img_4.jpg'
-import upperCarouselImg5 from '../../assets/upper_carousel_img_5.jpg'
+import upperCarouselImg1 from '../../assets/CarouselImgs/upper_carousel_img_1.jpg'
+import upperCarouselImg2 from '../../assets/CarouselImgs/upper_carousel_img_2.jpg'
+import upperCarouselImg3 from '../../assets/CarouselImgs/upper_carousel_img_3.jpg'
+import upperCarouselImg4 from '../../assets/CarouselImgs/upper_carousel_img_4.jpg'
+import upperCarouselImg5 from '../../assets/CarouselImgs/upper_carousel_img_5.jpg'
 
 const UpperCarousel = () => {
   let upperCarouselImgs = [upperCarouselImg1, upperCarouselImg2, upperCarouselImg3, upperCarouselImg4, upperCarouselImg5]
@@ -21,9 +21,6 @@ const UpperCarousel = () => {
   
   return (
     <div className='landing-img' >
-      <div className='search-bar'>
-        <input type='text' placeholder='Search' />
-      </div>
       <CrossfadeImage 
         src={upperCarouselImgs[upperImgNum]}
         duration='800'
