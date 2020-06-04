@@ -1,0 +1,70 @@
+.products {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 10px;
+}
+
+.product-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: scroll;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.track-item {
+  height: 100%;
+  margin-left: 25px;
+}
+
+.track-item .product-img-container {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.track-item .product-img-container img {
+  width: 120px;
+  padding-bottom: 10px;
+}
+
+.track-item .product-text-container {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.track-item .product-text-container .product-brand {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.track-item .product-text-container .product-name {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.track-item .product-text-container strong {
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=ProductTrack.css.map */

@@ -12,6 +12,7 @@ const LowerCarousel = () => {
   let lowerCarouselImgs = [lowerCarouselImg1, lowerCarouselImg2, lowerCarouselImg3, lowerCarouselImg4, lowerCarouselImg5]
   const [lowerImgNum, setLowerImgNum] = useState(0)
   
+  //cycles carousel images
   useEffect(() => {
     setTimeout(() => {
       if(lowerImgNum < lowerCarouselImgs.length - 1) setLowerImgNum(lowerImgNum => ++lowerImgNum)
@@ -23,8 +24,8 @@ const LowerCarousel = () => {
     <div className='landing-img' >
       <CrossfadeImage 
         src={lowerCarouselImgs[lowerImgNum]}
-        delay='3000'
-        duration='800'
+        delay={3000}
+        duration={800}
         style={{
           height: '400px',
           width: '100%'

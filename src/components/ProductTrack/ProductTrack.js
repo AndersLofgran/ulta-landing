@@ -2,20 +2,24 @@ import React from 'react';
 import productData from './productData'
 import './ProductTrack.scss'
 
-console.log("productData", productData)
-console.log("productData", productData.titles)
-console.log("productData", productData.products)
-
+// renders tracks
 let productTracks = productData.titles.map((title, i) => {
-  let products = productData.products.filter(product => {
-    if(product.track === i){
+
+  // renders products within respective track
+  let products = productData.products.map(product => {
+    if(product.track === i + 1){
       return (
-        <div className='track-item' >
-          <div>{product.img}</div>
-          <div>{product.rating}</div>
-          <div>{product.name}</div>
-          <div>{product.price}</div>
-          <div>{product.promotionText}</div>
+        <div className='track-item'>
+          <div className='product-img-container'>
+            <img src={product.imgURL} alt=''/>
+          </div>
+          <div className='product-text-container'>
+            <div>
+              <div className='product-brand'>{product.brand}</div>
+              <div className='product-name'>{product.name}</div>
+            </div>
+            <strong>${Number(product.price).toFixed(2)}</strong>
+          </div>
         </div>
       )
     }
@@ -23,7 +27,7 @@ let productTracks = productData.titles.map((title, i) => {
   
   return (
     <>
-      <h2>{title[i]}</h2>
+      <h2>{title}</h2>
       <div className='product-track' >
         {products}
       </div>
@@ -32,11 +36,10 @@ let productTracks = productData.titles.map((title, i) => {
 })
 
 
-
 const ProductTrack = () => {
   
   return (
-    <div className='product-section' >
+    <div className='products' >
       {productTracks}
     </div>
   )

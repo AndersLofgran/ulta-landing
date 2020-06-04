@@ -1,4 +1,6 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
+
 import Header from './components/Header/Header'
 import UpperCarousel from './components/Carousel/UpperCarousel'
 import LowerCarousel from './components/Carousel/LowerCarousel'
@@ -6,6 +8,7 @@ import Nav from './components/Nav/Nav'
 import ProductTrack from './components/ProductTrack/ProductTrack';
 import './App.scss'
 
+import logo from './assets/Ulta_Beauty_logo.png'
 import ultaPropa1 from './assets/Promotions/ulta_propa_1.jpg'
 import ultaDeal1 from './assets/Deals/ulta_deal_1.jpg'
 import ultaDeal2 from './assets/Deals/ulta_deal_2.jpg'
@@ -14,6 +17,9 @@ import ultaDeal3 from './assets/Deals/ulta_deal_3.jpg'
 const App = () => {  
   return (
     <div className='app'>
+      <div className='header'>
+        <img src={logo} alt='Ulta beauty logo'/>
+      </div>
       <Header />
       <UpperCarousel />
       <img className='landing-img' src={ultaDeal1} alt=''/>
@@ -28,3 +34,11 @@ const App = () => {
 }
 
 export default App
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

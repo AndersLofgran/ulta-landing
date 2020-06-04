@@ -8,6 +8,17 @@
   min-height: 100vh;
 }
 
+.header {
+  z-index: 2;
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+  img {
+    width: 180px;
+    margin-left: -5vw;
+  }
+}
+
 .landing-img {
   position: relative;
   display: flex;
