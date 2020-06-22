@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import CrossfadeImage from 'react-crossfade-image'
 import './Carousel.scss'
 
-import lowerCarouselImg1 from '../../assets/CarouselImgs/lower_carousel_img_1.jpg'
-import lowerCarouselImg2 from '../../assets/CarouselImgs/lower_carousel_img_2.jpg'
-import lowerCarouselImg3 from '../../assets/CarouselImgs/lower_carousel_img_3.jpg'
-import lowerCarouselImg4 from '../../assets/CarouselImgs/lower_carousel_img_4.jpg'
-import lowerCarouselImg5 from '../../assets/CarouselImgs/lower_carousel_img_5.jpg'
+import lowerCarouselImg1 from '../../assets/Images/CarouselImgs/lower_carousel_img_1.jpg'
+import lowerCarouselImg2 from '../../assets/Images/CarouselImgs/lower_carousel_img_2.jpg'
+import lowerCarouselImg3 from '../../assets/Images/CarouselImgs/lower_carousel_img_3.jpg'
+import lowerCarouselImg4 from '../../assets/Images/CarouselImgs/lower_carousel_img_4.jpg'
+import lowerCarouselImg5 from '../../assets/Images/CarouselImgs/lower_carousel_img_5.jpg'
 
 const LowerCarousel = () => {
   let lowerCarouselImgs = [lowerCarouselImg1, lowerCarouselImg2, lowerCarouselImg3, lowerCarouselImg4, lowerCarouselImg5]

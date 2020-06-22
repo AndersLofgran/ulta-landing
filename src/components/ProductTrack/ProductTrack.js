@@ -1,11 +1,11 @@
 import React from 'react';
-import productData from './productData'
+import productData from '../../assets/Data/productData'
 import './ProductTrack.scss'
 
-// renders tracks
+// fills tracks
 let productTracks = productData.titles.map((title, i) => {
 
-  // renders products within respective track
+  // fills products within respective track
   let products = productData.products.map(product => {
     if(product.track === i + 1){
       return (

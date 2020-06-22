@@ -1,4 +1,6 @@
 import React from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faBars, faSearch, faStoreAlt, faShoppingBag} from '@fortawesome/free-solid-svg-icons'
 import './Header.scss'
 
 
@@ -6,10 +8,10 @@ const Header = () => {
   return (
     <div className='header-sticky'>
       <div className='header-links'>
-        <div>Menu</div>
-        <div>Search</div>
-        <div>Stores</div>
-        <div>Bag</div>
+        <FontAwesomeIcon icon={faBars}/>
+        <FontAwesomeIcon icon={faSearch}/>
+        <FontAwesomeIcon icon={faStoreAlt}/>
+        <FontAwesomeIcon icon={faShoppingBag}/>
       </div>
 
       {/* <div className='search-bar'>
