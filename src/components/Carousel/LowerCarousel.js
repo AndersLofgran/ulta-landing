@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import CrossfadeImage from 'react-crossfade-image'
 import './Carousel.scss'
 
 import lowerCarouselImg1 from '../../assets/Images/CarouselImgs/lower_carousel_img_1.jpg'
@@ -17,19 +16,12 @@ const LowerCarousel = () => {
     setTimeout(() => {
       if(lowerImgNum < lowerCarouselImgs.length - 1) setLowerImgNum(lowerImgNum => ++lowerImgNum)
       else setLowerImgNum(0)
-    }, 6000);
-  })
+    }, 5000);
+  }, [lowerImgNum])
   
   return (
     <div className='landing-img' >
-      <CrossfadeImage 
-        src={lowerCarouselImgs[lowerImgNum]}
-        delay={3000}
-        duration={800}
-        style={{
-          height: '400px',
-          width: '100%'
-        }} />
+      <img src={lowerCarouselImgs[lowerImgNum]} alt='' className='carousel-img'/>
       <button>Shop Deals</button>
     </div>
   )

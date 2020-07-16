@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import CrossfadeImage from 'react-crossfade-image'
 import './Carousel.scss'
 
 import upperCarouselImg1 from '../../assets/Images/CarouselImgs/upper_carousel_img_1.jpg'
@@ -12,23 +11,17 @@ const UpperCarousel = () => {
   let upperCarouselImgs = [upperCarouselImg1, upperCarouselImg2, upperCarouselImg3, upperCarouselImg4, upperCarouselImg5]
   const [upperImgNum, setUpperImgNum] = useState(0)
   
-  //cycles carousel images
+  // cycles carousel images
   useEffect(() => {
     setTimeout(() => {
       if(upperImgNum < upperCarouselImgs.length - 1) setUpperImgNum(upperImgNum => ++upperImgNum)
       else setUpperImgNum(0)
-    }, 6000);
-  })
+    }, 5000);
+  }, [upperImgNum])
   
   return (
     <div className='landing-img' >
-      <CrossfadeImage 
-        src={upperCarouselImgs[upperImgNum]}
-        duration={800}
-        style={{
-          height: '400px',
-          width: 'initial'
-        }} />
+      <img src={upperCarouselImgs[upperImgNum]} alt='' className='carousel-img'/>
       <button>Shop Bestsellers</button>
     </div>
   )

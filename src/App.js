@@ -12,7 +12,7 @@ import ultaDeal2 from './assets/Images/Deals/ulta_deal_2.jpg'
 import ultaDeal3 from './assets/Images/Deals/ulta_deal_3.jpg'
 import './App.scss'
 
-const App = () => {  
+const App = () => {
   return (
     <div className='app'>
       <div className='header'>

@@ -2,3 +2,9 @@
   display: flex;
   justify-content: center;
 }
+
+.carousel-img {
+  margin-left: 50%;
+  transform: translateX(-25vw);
+  max-height: 400px;
+}
