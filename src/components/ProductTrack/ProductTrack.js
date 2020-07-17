@@ -28,6 +28,7 @@ let productTracks = productData.titles.map((title, i) => {
   return (
     <>
       <h2>{title}</h2>
+      <div className='img-divider'></div>
       <div className='product-track' >
         {products}
       </div>

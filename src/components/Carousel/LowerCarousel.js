@@ -20,9 +20,9 @@ const LowerCarousel = () => {
   }, [lowerImgNum])
   
   return (
-    <div className='landing-img' >
-      <img src={lowerCarouselImgs[lowerImgNum]} alt='' className='carousel-img'/>
-      <button>Shop Deals</button>
+    <div className='carousel-wrapper'>
+      <img src={lowerCarouselImgs[lowerImgNum]} className='carousel-img'/>
+      <button style={{left: 'calc(50vw - 82px)'}}>Shop Deals</button>
     </div>
   )
 }

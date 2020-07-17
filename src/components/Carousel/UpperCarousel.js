@@ -20,8 +20,8 @@ const UpperCarousel = () => {
   }, [upperImgNum])
   
   return (
-    <div className='landing-img' >
-      <img src={upperCarouselImgs[upperImgNum]} alt='' className='carousel-img'/>
+    <div className='carousel-wrapper'>
+      <img src={upperCarouselImgs[upperImgNum]} className='carousel-img'/>
       <button>Shop Bestsellers</button>
     </div>
   )

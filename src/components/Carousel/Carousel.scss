@@ -1,10 +1,26 @@
-.CrossfadeImage {
-  display: flex;
-  justify-content: center;
+.carousel-wrapper {
+  position: relative;
+  button {
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+    left: calc(50vw - 105px);
+    padding: 10px 30px;
+    color: #e90a5a;
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+    &:focus { outline: none; }
+    &:active { background-color: rgba(255, 255, 255, 0.5); }
+    transition: 0.1s;
+  }
 }
 
 .carousel-img {
+  height: 380px;
+  min-width: 101vw;
   margin-left: 50%;
-  transform: translateX(-25vw);
-  max-height: 400px;
+  transform: translateX(-50%);
 }

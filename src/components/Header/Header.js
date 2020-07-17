@@ -6,7 +6,6 @@ import './Header.scss'
 
 const Header = () => {
   return (
-    <div className='header-sticky'>
       <div className='header-links'>
         <FontAwesomeIcon icon={faBars}/>
         <FontAwesomeIcon icon={faSearch}/>
@@ -14,10 +13,9 @@ const Header = () => {
         <FontAwesomeIcon icon={faShoppingBag}/>
       </div>
 
-      {/* <div className='search-bar'>
-        <input type='text' placeholder='Search' />
-      </div> */}
-    </div>
+      // {/* <div className='search-bar'>
+      //   <input type='text' placeholder='Search' />
+      // </div> */}
   )
 }
 

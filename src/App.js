@@ -20,13 +20,19 @@ const App = () => {
       </div>
       <Header />
       <UpperCarousel />
+      <div className='img-divider'></div>
       <Nav />
+      <div className='img-divider'></div>
       <img className='landing-img' src={ultaPropa1} alt='' style={{height: '300px'}}/>
+      <div className='img-divider'></div>
       <img className='landing-img' src={ultaDeal1} alt=''/>
+      <div className='img-divider'></div>
       <LowerCarousel />
       <ProductTrack />
       <img className='landing-img' src={ultaDeal2} alt=''/>
+      <div className='img-divider'></div>
       <img className='landing-img' src={ultaDeal3} alt=''/>
+      <div className='img-divider'></div>
     </div>
   )
 }

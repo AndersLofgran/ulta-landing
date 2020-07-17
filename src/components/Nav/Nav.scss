@@ -1,10 +1,15 @@
 .nav {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 5px;
   div {
-    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
     padding: 20px 10px;
     margin: 5px 0;
     border: 2px solid #2c806f;
@@ -15,4 +20,11 @@
     font-size: 18px;
     &:active { background-color: rgba(255, 255, 255, 0.3); }
   }
+  strong { margin-left: 20px; }
+}
+
+.nav-link-arrow {
+  right: 75px;
+  font-size: 22px;
+  margin-right: 20px;
 }
