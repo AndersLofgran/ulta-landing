@@ -1,9 +1,37 @@
-.CrossfadeImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-wrapper button {
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  left: calc(50vw - 105px);
+  padding: 10px 30px;
+  color: #e90a5a;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.carousel-wrapper button:focus {
+  outline: none;
+}
+
+.carousel-wrapper button:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-img {
+  height: 380px;
+  min-width: 101vw;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=Carousel.css.map */

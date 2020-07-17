@@ -9,7 +9,7 @@ let productTracks = productData.titles.map((title, i) => {
   let products = productData.products.map(product => {
     if(product.track === i + 1){
       return (
-        <div className='track-item'>
+        <div className='track-item' key={`${product.name + i}`}>
           <div className='product-img-container'>
             <img src={product.imgURL} alt=''/>
           </div>

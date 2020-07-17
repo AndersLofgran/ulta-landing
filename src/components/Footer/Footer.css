@@ -1,0 +1,24 @@
+.footer {
+  height: 800px;
+  background-color: #f5f5f5;
+}
+
+.footer-sm-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-size: 40px;
+  color: #5a5657;
+}
+
+.footer-sm-icons * {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=Footer.css.map */

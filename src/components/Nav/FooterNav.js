@@ -3,8 +3,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import './Nav.scss'
 
-const Nav = () => {
-  let linkNames = ['Hair', 'Nails', 'Skin', 'Beauty', 'Tools', 'Gifts']
+const FooterNav = () => {
+  let linkNames = ['Stores', 'Ultamate Rewards', 'Orders', 'Contact Us', 'Get Email & Text Alerts']
 
   let navLinks = linkNames.map((category, i) => {
     return (
@@ -23,4 +23,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default FooterNav

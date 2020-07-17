@@ -111,7 +111,7 @@ const productData = {
       track: 2,
       imgURL: 'https://images.ulta.com/is/image/Ulta/2307527?$md$',
       brand: 'dermalogica',
-      name: 'travel size daily microfolian',
+      name: 'travel size daily microfoliant',
       price: '15.00',
       promotionText: 'Free Gift with Purchase!'
     },

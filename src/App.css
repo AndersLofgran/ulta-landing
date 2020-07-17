@@ -7,6 +7,7 @@
 
 .app {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .header {
@@ -17,7 +18,7 @@
 }
 
 .header img {
-  width: 180px;
+  width: 140px;
   margin-left: -5vw;
 }
 
@@ -42,7 +43,7 @@
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   color: #e90a5a;
   font-size: 20px;
   -webkit-transition: 0.1s;
@@ -55,5 +56,10 @@
 
 .landing-img button:active {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img-divider {
+  margin: 15px 100px;
+  border-bottom: 1px solid grey;
 }
 /*# sourceMappingURL=App.css.map */
